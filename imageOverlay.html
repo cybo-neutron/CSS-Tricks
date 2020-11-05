@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+
+<style>
+.card{
+    width:400px;
+    position: relative;
+    box-shadow: 5px 5px 15 px black;
+    
+    
+}
+.card img{
+    width:100%;
+}
+
+.card h2{
+    position: absolute;
+    bottom:0%;
+    color:white;
+    word-wrap: normal;
+    padding-left: 15px;
+    
+}
+
+.card::before{
+    content:"";
+    background: linear-gradient(135deg, #ff0509 0%,#bc1e78a8 33%,#7db9e88a 100%);
+    position: absolute;
+    top:0;
+    bottom:0;right:0;
+    left:0;
+
+}
+
+
+/* -------- */
+
+.text_card{
+    width:40vw;
+    height:40vh;
+    background:linear-gradient(135deg,rgba(255, 255, 255, 0.683) 50%,transparent 50%) ,url(images/valorant.jpg);
+    background-size:100% 100%;
+    box-shadow:5px 5px 10px rgb(49, 49, 49) ;
+}
+
+.text_card h2{
+    width: 50%;
+    padding:1em;
+}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+    <div class="card">
+        <img src="images/valorant.jpg" alt="image">
+        <h2>Text over image</h2>
+    </div>
+
+    <div class="text_card">
+        <h2>Text over image with side overlay</h2>
+    </div>
+
+    
+</body>
+</html>

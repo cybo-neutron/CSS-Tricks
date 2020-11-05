@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tailwindstyle.css">
+    <style>
+.card:hover::before{
+    content:"";
+  
+    color:white;
+    background-image: linear-gradient(135deg, #ff0509 0%,#bc1e78a8 33%,#7db9e88a 100%);
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="card container w-4/12 m-4 relative hover:shadow-2xl">
+        <img src="images/valorant.jpg" alt="">
+        <div class="font-bold absolute bottom-0 text-gray-100 p-3 text-2xl hover:">Text over image</div>
+    </div>
+</body>
+</html>
